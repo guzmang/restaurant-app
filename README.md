@@ -99,3 +99,13 @@ module.exports = mongoose.model(entity, RestaurantSchema);
 User interface: we are using a MVC pattern, so we could add a user interface with Handlebars for example. For now this works as a REST API.
 
 Routing: we are not contemplating the possibility of making a request to an invalid URL.
+
+## To end
+
+We upload our app on Heroku to a fast test. Please visit:
+
+https://restaurant-the-fork.herokuapp.com/api/
+
+And use the parameters (coor_x, coor_y, results, criteria) for example:
+
+https://restaurant-the-fork.herokuapp.com/api/search?coor_x=-4&coor_y=3&results=2&criteria=name
