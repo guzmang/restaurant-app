@@ -1,0 +1,46 @@
+{
+  "restaurants":[
+    {
+      "id":1,
+      "name":"La nueva panaderia",
+      "rating":5.0,
+      "coor_x":1.0,
+      "coor_y":1.0
+    },
+    {
+      "id":2,
+      "name":"Mi Buenos Aires Parrilla",
+      "rating":2.5,
+      "coor_x":-5.0,
+      "coor_y":2.0
+    },
+    {
+      "id":3,
+      "name":"Sabores propios",
+      "rating":1.5,
+      "coor_x":1.0,
+      "coor_y":5.0
+    },
+    {
+      "id":4,
+      "name":"Cafe del mar",
+      "rating":4.5,
+      "coor_x":-2.0,
+      "coor_y":3.0
+    },
+    {
+      "id":5,
+      "name":"Tony & Company",
+      "rating":3.5,
+      "coor_x":4.0,
+      "coor_y":-5.0
+    },
+    {
+      "id":6,
+      "name":"Green life",
+      "rating":5.0,
+      "coor_x":-5.0,
+      "coor_y":-4.0
+    }
+  ]
+}
