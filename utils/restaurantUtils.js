@@ -35,9 +35,9 @@ const orderByCriteria = (criteria, restaurants) => {
 const buildResponse = (criteria, count, restaurants) => {
     let response = {
         "search_result": {
-            "criteria": criteria,
-            "count": count,
-            "restaurants": restaurants
+            criteria,
+            count,
+            restaurants
         }
     };
     return response;

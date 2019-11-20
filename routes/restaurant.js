@@ -7,5 +7,6 @@ const router = express.Router();
 
 router.get('/', RestaurantController.home);
 router.get('/search', RestaurantController.search);
+router.get('/*', RestaurantController.invalid);
 
 module.exports = router;

@@ -15,6 +15,16 @@ const controller = {
         let count = req.query.results;
         let criteria = req.query.criteria || "";
 
+        if (isNaN(count) || count < 1)
+            return res.status(400).send(
+                'Please insert a positive "results" number as a valid parameter request'
+            );
+
+        if (!['', 'name', 'rating'].includes(criteria))
+            return res.status(400).send(
+                'Please insert a valid "criteria" value or don\'t use it\ne.g.: "name" or "rating"'
+            );
+
         let distancesAndRestaurants = [];
         let nearbyRestaurants = [];
 
@@ -25,7 +35,13 @@ const controller = {
         nearbyRestaurants = RestaurantUtils.orderByCriteria(criteria, nearbyRestaurants);
 
         return res.status(200).send(
-            RestaurantUtils.buildResponse(criteria, count, nearbyRestaurants)
+            RestaurantUtils.buildResponse(criteria, nearbyRestaurants.count, nearbyRestaurants)
+        );
+    },
+
+    invalid: function(req, res) {
+        return res.status(404).send(
+            'Not found'
         );
     }
 }

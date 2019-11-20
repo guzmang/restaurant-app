@@ -1,6 +1,6 @@
 {
     "name": "lab-buenos-aires-office",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "App to get restaurants near us",
     "main": "index.js",
     "scripts": {

@@ -109,3 +109,14 @@ https://restaurant-the-fork.herokuapp.com/api/
 And use the parameters (coor_x, coor_y, results, criteria) for example:
 
 https://restaurant-the-fork.herokuapp.com/api/search?coor_x=-4&coor_y=3&results=2&criteria=name
+
+## Version 1.1.0
+
+About testing, if you provide:
+- An invalid criteria, the response won't order by using one. (solved: now when you use a criteria, it is needed to provide a valid one)
+- Negative results: discounts over the total restaurants near us. If its module is greater than the total restaurants we have near, the response will have 0 restaurants in the list. (solved: now you must type a value greater than 0)
+- A string as results: doesn't return any restaurants. (solved: now it is required to type a positive number as results)
+
+Pending:
+- A results number greater than the total : returns the total restaurants in the list.
+- An invalid coordinate or both: just returns the restaurants according the specified results (and if it is a valid one).
